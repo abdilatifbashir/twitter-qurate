@@ -6,10 +6,16 @@ module.exports = {
     extend: {
       colors:{
         teal:colors.teal,
-        yellow:colors.yellow
+        yellow:colors.yellow,
+        twitterBlue:colors.lightBlue
 
 
-      }
+      },
+      inset:{
+        "70":"39rem",
+        "66":"16rem",
+        "120":"30rem"
+      },
     },
   },
   variants: {

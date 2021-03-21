@@ -1,5 +1,5 @@
 <template>
-    <div class="w-auto px-2 h-6 rounded-full text-white bg-blue-500 outline-none">
+    <div class="w-auto px-2 h-6 rounded-full text-white bg-twitterBlue-500 outline-none">
         <button>save</button>
     </div>
 </template>

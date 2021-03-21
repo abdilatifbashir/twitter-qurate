@@ -15,12 +15,12 @@
 
     </div>
     <!-----content ----->
-    <div  class="flex justify-between border-b pt-1 ">
-      <div class="flex items-center gap-4  p-2">
-        <div class="text-gray-500 hover:text-black hover:border-b-4 hover:border-blue-600">
+    <div  class="flex justify-between border-b  ">
+      <div class="flex items-center gap-4  ">
+        <div  @click="setTwitModal" class=" cursor-pointer text-gray-500 hover:text-black min-nav">
           content
         </div>
-       <div class="text-gray-500 hover:text-black">
+       <div @click="setPlusModal"  class="cursor-pointer text-gray-500 hover:text-black min-nav">
           Extra fields
        </div>
       </div>
@@ -38,12 +38,38 @@
 import { defineComponent } from "vue";
 import CancelButton from "./buttonBoxes/CancelButton.vue";
 import SaveButton from "./buttonBoxes/SaveButton.vue";
-
+import store from '@/store';
+import {mapActions} from "vuex"
 export default defineComponent({
   name: "Menu",
   components: {
     CancelButton,
     SaveButton
   },
+  methods:{
+    ...mapActions(['setTwitModal','setPlusModal'])
+  },
+  data() {
+    return {
+      // name :store.state.name
+      // twitModal :store.state.twitModal,
+      
+    }
+  },
+  created(){
+    // console.log("Hi qurate ",this.name)
+  }
 });
 </script>
+
+<style scoped>
+.min-nav:hover{
+  border-bottom: 4px solid blue;
+  border-radius: 2px;
+position: relative;
+top:1px;
+  /* margin-top: 2px; */
+
+}
+  
+</style>
