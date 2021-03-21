@@ -1,6 +1,6 @@
 <template>
-<div>
-  <router-view></router-view>
+  <div>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -8,17 +8,11 @@
 import { defineComponent } from "vue";
 export default defineComponent({
   name: "App",
-  components: {
-   
-  
-  }
+  components: {},
+  created() {
+    console.log("all state here", this.$store.state);
+  },
 });
 </script>
 
-<style scoped>
-
-</style>
-
-
-
-
+<style scoped></style>
