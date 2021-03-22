@@ -3,7 +3,7 @@
     <div
       class="float-right rounded-full border-solid  bg-gray-200 relative bottom-3 p-1"
     >
-      <span class="text-gray-400 w-1 h-1">x</span>
+      <span @click="setExtraFieldsFormTwo" class="text-gray-400 w-1 h-1">x</span>
     </div>
     <div class=" ml-6">
       <label for="name">Name</label>

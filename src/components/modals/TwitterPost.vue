@@ -142,7 +142,13 @@ export default defineComponent({
   methods: {
     ...mapActions(["toggleTwitModal", "postTwit"]),
     continuePost() {
-      this.postTwit(this.post);
+      this.$store.commit("setTwitPost", this.post);
+    },
+  },
+  computed: {
+    postedTwit: () => {
+      // return postTwit(post);
+      // console.log("new state",this.$st)
     },
   },
 });

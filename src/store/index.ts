@@ -63,8 +63,9 @@ export default createStore({
     },
    async postTwit({ commit }, postMessage) {
       commit("setTwitPost", postMessage)
+      console.log(postMessage)
     }
-
+    
   },
   modules: {}
 });

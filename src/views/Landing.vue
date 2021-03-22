@@ -1,6 +1,6 @@
 <template>
   <div class="grid grid-cols-7 bg-gray-500 h-screen">
-    <div class="  col-span-5">
+    <div class="  col-span-5" :class="{ 'col-span-7': !sideBar }">
       <div class="grid grid-rows-7">
         <div class="row-span-3 bg-gray-50">
           <Menu />

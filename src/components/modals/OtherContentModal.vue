@@ -6,7 +6,7 @@
         <Span class="bg-gray-200 py-2 px-4 rounded">String</Span>
       </div>
       <div @click="setExtraFieldsModal">
-        <Span class="bg-gray-200 py-2 px-4 rounded">video</Span>
+        <Span class="bg-gray-200 py-2 px-4 rounded">Text</Span>
       </div>
     </div>
   </div>

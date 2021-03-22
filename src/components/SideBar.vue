@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="flex items-center gap-6 pt-2 border-gray-200 border-b-2 p-4">
+    <div class="flex items-center gap-6 pt-2 border-gray-200 border-b-2 p-4 ">
       <!--------->
       <div class="pl-4">
         <svg
